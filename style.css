@@ -4,60 +4,68 @@
 
 /* <===================CSS VARIABLES===================> */
 
-:root{
+:root {
     --h1-size: 7rem;
-    --h2-size: 2.1rem;
-    --h3-size: 1.7rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.4rem;
     --text-size: 1.3rem;
-    --horizontal-margin-spacing:6rem;
-    --grey-color-light: rgba(232,230,230,.6);
-    --grey-color: rgba(232,230,230,1);
+    --horizontal-margin-spacing: 6rem;
+    --grey-color-light: rgba(232, 230, 230, .6);
+    --grey-color: rgba(232, 230, 230, 1);
 }
 
 /* <===================UNIVERSAL CSS===================> */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Cinzel', serif;
     color: #212121;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.hz-margin{
+
+.hz-margin {
     padding: 0 var(--horizontal-margin-spacing);
 }
-h1{
+
+h1 {
     font-size: var(--h1-size);
     font-weight: 500;
     line-height: var(--h1-size);
 }
-h2{
+
+h2 {
     font-size: var(--h2-size);
     font-weight: bold;
 }
-h3{
+
+h3 {
     font-size: var(--h3-size);
     font-weight: 500;
 }
-.reveal{
+
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
-  }
-  
-  .reveal.active{
+}
+
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
-  }
-.text{
+}
+
+.text {
     font-family: 'Quicksand', sans-serif;
     font-size: var(--text-size);
     line-height: 1.3rem;
 }
-.huge-btn{
+
+.huge-btn {
     display: block;
     font-size: 1rem;
     background: transparent;
@@ -67,44 +75,52 @@ h3{
     width: fit-content;
     margin: 30px 0;
 }
-.huge-btn:hover{
+
+.huge-btn:hover {
     color: grey;
     border-color: grey;
 }
-.v-reposition-container{
+
+.v-reposition-container {
     position: absolute;
     left: 0;
     width: 100vw;
 }
-.h-reposition-container{
+
+.h-reposition-container {
     width: 100vw;
     position: relative;
     top: 100vh;
 }
+
 /* <===================NAVBAR===================> */
 
-nav{
+nav {
     height: 3vh;
     width: 100%;
     margin-bottom: 20vh;
 }
-label.logo{
+
+label.logo {
     font-size: 35px;
     line-height: 80px;
     padding: 0 0 0 30px;
     font-weight: bold;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-right: 20px;
     list-style: none;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     padding: 7px 13px;
@@ -112,11 +128,13 @@ nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: orange;
     transition: .5s;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     float: right;
     line-height: 80px;
@@ -124,25 +142,31 @@ a:hover{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
-@media (max-width:1000px){
-    label.logo{
+
+@media (max-width:1000px) {
+    label.logo {
         font-size: 20px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 10px;
     }
-    html{
+
+    html {
         font-size: 10px;
     }
 }
-@media (max-width:570px){
-    .checkbtn{
+
+@media (max-width:570px) {
+    .checkbtn {
         display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -153,63 +177,74 @@ a:hover{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav li ul a{
+
+    nav li ul a {
         font-size: 20px;
     }
-    a:hover, a.active{
+
+    a:hover,
+    a.active {
         background: none;
         color: grey;
     }
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         left: 0;
     }
 }
 
 /* <===================HOME===================> */
 
-.container-out{
+.container-out {
     margin-top: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.home-img{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic1.jpg?alt=media&token=5dbf5af2-354b-464c-9db2-7da57b484eda);
+
+.home-img {
+    background-image: url(assets/images/Valeria\ y\ Antonio-home-img.jpg);
     background-size: cover;
     background-position: center;
 }
-.home-img-sm{
+
+.home-img-sm {
     display: none;
     width: 100%;
     margin: 20px 0 0 0;
     height: 50vh;
 }
-#home-img-lg{
+
+#home-img-lg {
     display: block;
     height: 110vh;
     width: 50vw;
     background-position-x: -100px;
 }
-@media (max-width:1000px){
-    .container-out{
+
+@media (max-width:1000px) {
+    .container-out {
         flex-direction: column;
     }
-    .home-img-sm{
+
+    .home-img-sm {
         display: block;
     }
-    #home-img-lg{
+
+    #home-img-lg {
         display: none;
     }
 }
 
 /* <===================TIMELINE===================> */
 
-.timeline{
+.timeline {
     display: block;
     background-color: var(--grey-color-light);
     float: left;
@@ -219,26 +254,31 @@ a:hover{
     backdrop-filter: blur(4px);
     padding: 8vh var(--horizontal-margin-spacing);
 }
-.timeline-container{
+
+.timeline-container {
     display: flex;
     flex-direction: row;
     margin: 8vh 0;
 }
-.timeline-img{
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic2.jpg?alt=media&token=7a0e5f94-d68e-4d32-bd3b-2a82b7acd40c);
+
+.timeline-img {
+    background-image: url(assets/images/Valeria\ y\ Antonio-timeline-img.jpg);
     height: 70vh;
     width: 30vw;
     background-position: center;
     background-size: cover;
 }
-.timings{
+
+.timings {
     margin: 30px;
 }
-.timeline-container .text{
+
+.timeline-container .text {
     padding: 1rem 0 1rem 4rem;
 }
-@media (max-width:1000px){
-    .timeline{
+
+@media (max-width:1000px) {
+    .timeline {
         background-color: var(--grey-color);
         float: none;
         position: relative;
@@ -247,10 +287,12 @@ a:hover{
         backdrop-filter: blur(0);
         height: fit-content;
     }
-    .timeline-container{
+
+    .timeline-container {
         flex-direction: column;
     }
-    .timeline-img{
+
+    .timeline-img {
         height: 50vh;
         width: 100%;
     }
@@ -258,35 +300,41 @@ a:hover{
 
 /* <===================STORY===================> */
 
-#story{
+#story {
     padding-top: 10vh;
     display: flex;
     flex-direction: row;
     margin: 10vh 0;
 }
-#story h3{
+
+#story h3 {
     width: 40vw;
 }
-#story p{
+
+#story p {
     width: 40vw;
     text-align: justify;
     font-size: var(--h3-size);
     line-height: var(--h3-size);
 }
-@media (max-width:1000px){
-    .h-reposition-container{
+
+@media (max-width:1000px) {
+    .h-reposition-container {
         position: relative;
         top: 0;
     }
-    #story{
+
+    #story {
         flex-direction: column;
     }
-    #story h3{
+
+    #story h3 {
         width: 100%;
         margin: 5px 0;
         font-size: var(--h3-size);
     }
-    #story p{
+
+    #story p {
         width: 100%;
         margin: 5px 0;
         font-size: var(--text-size);
@@ -296,62 +344,72 @@ a:hover{
 
 /* <===================GALLERY===================> */
 
-.gallery{
+.gallery {
     display: flex;
     padding: 20vh 0;
     justify-content: center;
     align-items: center;
 }
-.gallery-img{
+
+.gallery-img {
     width: 30vw;
     height: 30vw;
     margin: 10px;
     background-size: cover;
     background-position: center;
 }
-.gallery-img:nth-child(1){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic3.jpg?alt=media&token=32a76585-cbeb-41f5-8921-6ad1ff60aa79);
-    background-position-x: right;
+
+.gallery-img:nth-child(1) {
+    background-image: url(assets/images/Valeria\ y\ Antonio-gallery1.jpg);
+    /* background-position-x: center; */
 }
-.gallery-img:nth-child(3){
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic4.jpg?alt=media&token=3bde5693-e5c8-412d-bd47-1ef972258406);
+
+.gallery-img:nth-child(3) {
+    background-image: url(assets/images/Valeria\ y\ Antonio-gallery2.jpg);
 }
-.gallery-img:nth-child(2){
-    background-position-y: top;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic5.jpg?alt=media&token=d9ef9475-ec6d-41ca-8cfd-3e45b70139d3);
+
+.gallery-img:nth-child(2) {
+    background-image: url(assets/images/Valeria\ y\ Antonio-gallery3.jpg);
+    /* background-position-y: top; */
 }
-@media (max-width:1000px){
-    .gallery{
+
+@media (max-width:1000px) {
+    .gallery {
         flex-direction: column;
         padding: 0;
     }
-    .gallery-img{
+
+    .gallery-img {
         width: 100vw;
         height: 90vw;
         margin: 2px 0;
     }
-    .gallery-img:nth-child(2){
+
+    .gallery-img:nth-child(2) {
         position: relative;
         left: -(var(--horizontal-margin-spacing));
     }
 }
 
 /* <===================QUOTE===================> */
-.quote{
+.quote {
     margin: 10vh 0;
 }
-.quote h1{
+
+.quote h1 {
     width: 55vw;
     font-size: 4rem;
     text-align: center;
     margin: auto;
 }
-.author{
+
+.author {
     text-align: center;
     margin: 20px 0 10vh 0;
 }
-@media (max-width:1570px){
-    .quote h1{
+
+@media (max-width:1570px) {
+    .quote h1 {
         font-size: 2rem;
         line-height: 2rem;
     }
@@ -359,7 +417,7 @@ a:hover{
 
 /* <===================HANDS===================> */
 
-.hands{
+.hands {
     height: 120vh;
     width: 100%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/GurAmanWed%2Fpic6.jpg?alt=media&token=febecde7-9479-4a1e-8402-28f021228422);
@@ -369,52 +427,60 @@ a:hover{
     background-repeat: no-repeat;
 }
 
-    /* <===================STAY===================> */
-    #stay{
-        background-color: var(--grey-color);
-        padding: 10vh var(--horizontal-margin-spacing);
-        width: 100%;
+/* <===================STAY===================> */
+#stay {
+    background-color: var(--grey-color);
+    padding: 10vh var(--horizontal-margin-spacing);
+    width: 100%;
 }
-.stay-container{
+
+.stay-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 20vh 0;
 }
-.stay-item .text{
+
+.stay-item .text {
     margin: 20px 0;
 }
-.links{
+
+.links {
     cursor: pointer;
     text-decoration: underline;
 }
-@media (max-width:1000px){
-    .stay-container{
+
+@media (max-width:1000px) {
+    .stay-container {
         flex-direction: column;
         margin: 10px 0;
     }
-    .stay-item{
+
+    .stay-item {
         margin: 2vh 0;
     }
 }
 
 /* <===================REGISTRY===================> */
 
-#registry{
-    padding: 20vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing); 
+#registry {
+    padding: 20vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.registry-container{
+
+.registry-container {
     display: block;
     width: 30vw;
 }
-.registry-container .text{
+
+.registry-container .text {
     text-align: justify;
     margin: 20px 0;
 }
-.registry-img{
+
+.registry-img {
     display: block;
     height: 100vh;
     width: 40vw;
@@ -424,55 +490,65 @@ a:hover{
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
-.registry-img-sm{
+
+.registry-img-sm {
     display: none;
 }
-.registry-img-lg{
+
+.registry-img-lg {
     display: block;
 }
-@media (max-width:1000px){
-    #registry{
+
+@media (max-width:1000px) {
+    #registry {
         flex-direction: column;
     }
-    .registry-img{
+
+    .registry-img {
         width: 100%;
         height: 50vh;
     }
-    .registry-img-sm{
+
+    .registry-img-sm {
         margin-top: 10vh;
         display: block;
     }
-    .registry-img-lg{
+
+    .registry-img-lg {
         display: none;
     }
-    .registry-container{
+
+    .registry-container {
         width: 100%;
     }
-    #registry button{
+
+    #registry button {
         margin-inline: auto;
     }
 }
 
 
 /* <===================PARTING MESSAGE===================> */
-.parting-message h1{
+.parting-message h1 {
     margin-top: 10vh;
     text-align: center;
 }
-.parting-message button{
-    margin:  10vh auto;
+
+.parting-message button {
+    margin: 10vh auto;
 }
 
 /* <===================FOOTER===================> */
 
-footer{
+footer {
     margin-top: 20vh;
     height: fit-content;
     width: 100%;
     background-color: var(--grey-color);
     padding: 10vh 30px;
 }
-footer h2{
+
+footer h2 {
     font-size: 2Srem;
     font-weight: normal;
 }
