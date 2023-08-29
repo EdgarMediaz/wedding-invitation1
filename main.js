@@ -1,6 +1,8 @@
 const parallax = document.getElementById("home-img-lg");
 const parallax1 = document.getElementById("parallax1");
 const parallax2 = document.getElementById("parallax2");
+const rsvpButton1 = document.getElementById("rsvp-button1");
+const rsvpButton2 = document.getElementById("rsvp-button2");
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
@@ -43,3 +45,14 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Logica para el boton de CONFIRMAR
+
+rsvpButton1.addEventListener("click", function () {
+  window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5mbaq1-Icscbqj7qWppTCCTvrXKY-u0y54njT0uoFGQJGnw/viewform?usp=pp_url";
+});
+
+rsvpButton2.addEventListener("click", function () {
+  window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5mbaq1-Icscbqj7qWppTCCTvrXKY-u0y54njT0uoFGQJGnw/viewform?usp=pp_url";
+});
+

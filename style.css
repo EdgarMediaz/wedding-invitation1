@@ -79,6 +79,7 @@ h3 {
 .huge-btn:hover {
     color: grey;
     border-color: grey;
+    cursor: pointer;
 }
 
 .v-reposition-container {
