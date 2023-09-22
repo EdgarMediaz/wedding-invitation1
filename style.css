@@ -200,6 +200,29 @@ a:hover {
     }
 }
 
+/*<==================COUNTER==================> */
+
+.contador {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 1rem auto;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* <===================HOME===================> */
 
 .container-out {
@@ -210,7 +233,7 @@ a:hover {
 }
 
 .home-img {
-    background-image: url(assets/images/Valeria\ y\ Antonio-home-img.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-home-img.jpg?alt=media&token=80216f13-12c7-4877-82dd-1192ef877119);
     background-size: cover;
     background-position: center;
 }
@@ -262,7 +285,7 @@ a:hover {
 }
 
 .timeline-img {
-    background-image: url(assets/images/Valeria\ y\ Antonio-timeline-img.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-timeline-img.jpg?alt=media&token=385217b8-00cd-45d2-aef7-b7bb75095af0);
     height: 70vh;
     width: 30vw;
     background-position: center;
@@ -360,16 +383,16 @@ a:hover {
 }
 
 .gallery-img:nth-child(1) {
-    background-image: url(assets/images/Valeria\ y\ Antonio-gallery1.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-gallery1.jpg?alt=media&token=7648f783-9623-4c45-986c-851d41fe7587);
     /* background-position-x: center; */
 }
 
 .gallery-img:nth-child(3) {
-    background-image: url(assets/images/Valeria\ y\ Antonio-gallery2.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-gallery2.jpg?alt=media&token=82558a04-8e7a-4bd3-8005-536c94e3c9f3);
 }
 
 .gallery-img:nth-child(2) {
-    background-image: url(assets/images/Valeria\ y\ Antonio-gallery3.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-gallery3.jpg?alt=media&token=7509b52a-c061-4d60-97e3-773c9b6364de);
     /* background-position-y: top; */
 }
 
@@ -420,11 +443,11 @@ a:hover {
 .hands {
     height: 120vh;
     width: 100%;
-    background-image: url(assets/images/Valeria\ y\ Antonio-hands.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-hands.jpg?alt=media&token=e5230ffb-cf92-42f3-bfd9-f6d6a9e46c30);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-y: center;
 }
 
 /* <===================STAY===================> */
@@ -484,7 +507,7 @@ a:hover {
     display: block;
     height: 100vh;
     width: 40vw;
-    background-image: url(assets/images/Valeria\ y\ Antonio-registry-img.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-registry-img.jpg?alt=media&token=a44340fa-e7b6-4944-8aab-50a227c5e217);
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */

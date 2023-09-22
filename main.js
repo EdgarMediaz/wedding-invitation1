@@ -29,12 +29,12 @@ function myFunction() {
 
 
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  const reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -46,7 +46,7 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// Logica para el boton de CONFIRMAR
+// <=========== Logica para el boton de CONFIRMAR =========>
 
 rsvpButton1.addEventListener("click", function () {
   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5mbaq1-Icscbqj7qWppTCCTvrXKY-u0y54njT0uoFGQJGnw/viewform?usp=pp_url";
@@ -55,4 +55,21 @@ rsvpButton1.addEventListener("click", function () {
 rsvpButton2.addEventListener("click", function () {
   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5mbaq1-Icscbqj7qWppTCCTvrXKY-u0y54njT0uoFGQJGnw/viewform?usp=pp_url";
 });
+
+// <============= Logica para el CONTADOR =============>
+
+// Fecha del evento (reemplaza esta fecha con la fecha de tu evento)
+const fechaEvento = new Date('2023-10-20');
+
+function actualizarContador() {
+  const fechaActual = new Date();
+  const diferencia = fechaEvento - fechaActual;
+
+  const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+  document.getElementById('dias').textContent = dias;
+}
+
+// Llama a la función para actualizar el contador cada segundo
+setInterval(actualizarContador, 1000);
 
