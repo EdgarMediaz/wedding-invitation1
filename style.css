@@ -281,7 +281,7 @@ a:hover {
 .timeline-container {
     display: flex;
     flex-direction: row;
-    margin: 8vh 0;
+    margin: 12vh 0;
 }
 
 .timeline-img {
@@ -441,13 +441,12 @@ a:hover {
 /* <===================HANDS===================> */
 
 .hands {
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/wedding-invitation-1-b1578.appspot.com/o/Valeria%20y%20Antonio-hands.jpg?alt=media&token=e5230ffb-cf92-42f3-bfd9-f6d6a9e46c30);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position-y: center;
 }
 
 /* <===================STAY===================> */
@@ -511,6 +510,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
+    background-position-x: center;
 }
 
 .registry-img-sm {

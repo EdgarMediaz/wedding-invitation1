@@ -49,17 +49,17 @@ window.addEventListener("scroll", reveal);
 // <=========== Logica para el boton de CONFIRMAR =========>
 
 rsvpButton1.addEventListener("click", function () {
-  window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5mbaq1-Icscbqj7qWppTCCTvrXKY-u0y54njT0uoFGQJGnw/viewform?usp=pp_url";
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLScFGzGBSxY9ZkGlsyIHNn-DtmYJauErCFqjMKrFSHqm31qPGA/viewform?usp=sf_link");
 });
 
 rsvpButton2.addEventListener("click", function () {
-  window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5mbaq1-Icscbqj7qWppTCCTvrXKY-u0y54njT0uoFGQJGnw/viewform?usp=pp_url";
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLScFGzGBSxY9ZkGlsyIHNn-DtmYJauErCFqjMKrFSHqm31qPGA/viewform?usp=sf_link");
 });
 
 // <============= Logica para el CONTADOR =============>
 
 // Fecha del evento (reemplaza esta fecha con la fecha de tu evento)
-const fechaEvento = new Date('2023-10-20');
+const fechaEvento = new Date('2023-10-27');
 
 function actualizarContador() {
   const fechaActual = new Date();
